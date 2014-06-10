@@ -7,9 +7,9 @@ permalink:        pretty
 
 # Setup
 title:            gringo.io
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+tagline:          'My adventures in coding'
+description:      'Geeking out with Ruby, Rails, Vim, and any other rabbit hole that comes along'
+url:              http://gringo.io
 
 author:
   name:           'Miles Starkenburg'
@@ -18,7 +18,10 @@ author:
 paginate:         5
 
 # Custom vars
-version:          2.0.0
+version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  url:            https://github.com/gringocl
+
+twitter:
+  url:            https://twitter.com/gring0cl
