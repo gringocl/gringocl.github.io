@@ -1,9 +1,10 @@
 ---
 layout: post
 title: How to Set Up a New Rails Project with Minitest and Capybara for Behaviour Driven Development
+published: true
 ---
 
-## Introduction to Minitest
+## Getting Started
 
 Here are step-by-step instructions on setting up a new rails app with Minitest and Capybara. We'll be using a rails 4.1+ in this example. Lets get started!
 
@@ -34,6 +35,8 @@ bundle install
 rails generate minitest:install
 {% endhighlight %}
 
+## Configuration
+
 Open up `test_helper.rb` and uncomment `require "mintitest/rails/capybara"` and optionally `minitest/pride`. The first required statement adds Capybara for our feature tests and the second adds awesome colors to the test suite (always a bonus!). At this point you can remove the comments, as they are no longer needed. Your `test_helper.rb` should look similar to the one below.
 
 {% highlight ruby %}
@@ -58,6 +61,8 @@ config.generators do |g|
 end
 {% endhighlight %}
 
+## Adding a runner
+
 Now add a `features` rake task (since we'll be writing feature specs) as the default test task to run. Create a new file named `features.rake` in the `lib/tasks/` folder and add the following:
 
 {% highlight ruby %}
@@ -67,6 +72,8 @@ end
 
 Rake::Task["test:run"].enhance ["test:features"]
 {% endhighlight %}
+
+## Writing our first feature spec
 
 Now that Minitest and Capybara are setup, lets commit the changes to Git and then create a new `feature` spec.
 
